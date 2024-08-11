@@ -1,11 +1,10 @@
 :root {
   --blanco: #fff;
   --oscuro: #212121;
-  --primario: rgb(255, 193, 7);
+  --primario: #ffc107;
   --secundario: #0097a7;
   --gris: #757575;
 
-  --fuente-principal: 3.8rem;
 }
 
 html {
@@ -13,11 +12,11 @@ html {
 }
 body {
   font-size: 16px; /* 1rem = 10px */
+  font-family: "Kufam", sans-serif;
 }
 .titulo {
   text-align: center;
-  font-size: var(--fuente-principal);
-  color: var(--primario);
+  font-size: 3.8rem;
 }
 
 .titulo span {
