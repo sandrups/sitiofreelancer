@@ -33,6 +33,8 @@ body {
 }
 .nav-principal {
   padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav-principal a {
