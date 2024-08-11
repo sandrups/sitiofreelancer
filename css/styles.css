@@ -1,3 +1,13 @@
+:root {
+  --blanco: #fff;
+  --oscuro: #212121;
+  --primario: rgb(255, 193, 7);
+  --secundario: #0097a7;
+  --gris: #757575;
+
+  --fuente-principal: 3.8rem;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -6,18 +16,10 @@ body {
 }
 .titulo {
   text-align: center;
-  font-size: 3.8rem;
-}
-
-h1.titulo span {
-  font-size: 2rem;
-  color: blue;
+  font-size: var(--fuente-principal);
+  color: var(--primario);
 }
 
 .titulo span {
   font-size: 2rem;
-  color: red;
-}
-span {
-  color: green;
 }
