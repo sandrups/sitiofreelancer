@@ -9,6 +9,10 @@
 
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 body {
   font-size: 16px; /* 1rem = 10px */
@@ -19,7 +23,9 @@ body {
   text-align: center;
   font-size: 3.8rem;
 }
-
+.titulo::after{
+  content: 'esto va despues';
+}
 .titulo span {
   font-size: 2rem;
 }
@@ -67,4 +73,6 @@ body {
   background-image: url(../image/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 450px;
+  padding: 20px;
 }
