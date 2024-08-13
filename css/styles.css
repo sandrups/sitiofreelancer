@@ -39,7 +39,7 @@ body {
 480: telefono
 768: tablet
 1140: notebook
-1400: monitor pc
+1440: monitor pc
 */
 @media (min-width: 480px) {
   .nav-principal {
@@ -61,4 +61,10 @@ body {
 .nav-principal a:hover {
   background-color: var(--primario);
   color: var(--oscuro);
+}
+
+.hero {
+  background-image: url(../image/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
