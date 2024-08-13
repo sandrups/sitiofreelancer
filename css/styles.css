@@ -24,7 +24,7 @@ body {
   font-size: 2rem;
 }
 .contenedor {
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .nav-bg {
@@ -32,12 +32,25 @@ body {
 
 }
 .nav-principal {
-  
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+}
+/* 
+480: telefono
+768: tablet
+1140: notebook
+1400: monitor pc
+*/
+@media (min-width: 480px) {
+  .nav-principal {
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
 }
 
 .nav-principal a {
+  display: block;
+  text-align: center;
   color: var(--blanco);
   text-decoration: none;
   font-size: 2rem;
@@ -48,22 +61,4 @@ body {
 .nav-principal a:hover {
   background-color: var(--primario);
   color: var(--oscuro);
-}
-
-body {
-  background-color: yellow;
-  font-size: 3rem;
-}
-
-@media (min-width: 480px) {
-  body {
-    background-color: blue;
-    font-size: .5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    background-color: cornflowerblue;
-  }
 }
