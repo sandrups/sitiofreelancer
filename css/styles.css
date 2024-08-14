@@ -4,7 +4,7 @@
   --primario: #ffc107;
   --secundario: #0097a7;
   --gris: #757575;
-
+  --grisclaro: #dfe9f3;
 }
 /* Goblales */
 html {
@@ -17,6 +17,7 @@ html {
 body {
   font-size: 16px; /* 1rem = 10px */
   font-family: "Kufam", sans-serif;
+  background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blanco) 100%);
 }
 .contenedor {
   max-width: 120rem;
