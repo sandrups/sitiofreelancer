@@ -35,11 +35,15 @@ body {
   border-radius: .5rem;
   width: 84%;
   text-align: center;
+  border: none;
 }
 @media (min-width: 480px) {
   .boton {
     width: auto;
   }
+}
+.boton:hover {
+  cursor: pointer;
 }
 .sombra {
   box-shadow: 0px 5px 15px 0px rgba(92,92,92,0.54);
@@ -64,6 +68,23 @@ h1, h2, h3 {
 .titulo span {
   font-size: 2rem;
 }
+
+/* Utilidades */
+.w-ms-100 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+    .w-ms-100 {
+      width: auto;
+    }
+}
+.flex {
+  display: flex;
+}
+.alinear-derecha {
+  justify-content: flex-end;
+}
+
 
 /* Navegación Principal */
 .nav-bg {
@@ -179,4 +200,23 @@ h1, h2, h3 {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 2rem;
+}
+
+.contenedor-campos {
+
+}
+.campo {
+  margin-bottom: 1rem;
+}
+.campo label {
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom: .5rem;
+  display: block;
+}
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: .5rem;
 }
